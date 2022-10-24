@@ -1,18 +1,9 @@
+import React from 'react';
 
-
-
-
-const HomeSlider = ({ hotel }) => {
-    const { image, id } = hotel;
-
-
-    const imageClick = (id) => {
-        console.log('Click', id);
-
-    }
+const HomeSlider = () => {
     return (
-        <div onClick={() => imageClick(id)} className="carousel-item">
-            <img src={image} className="rounded-box" alt="/"/>
+        <div>
+            <h1>Hi</h1>
         </div>
     );
 };

@@ -20,14 +20,14 @@ export const router = createBrowserRouter([
                 path: '/',
                 element: <Home></Home>,
                 loader: ()=>{
-                    return fetch('https://hotels-data-server.vercel.app/hotels')
+                    return fetch('https://hotels-data-server.vercel.app/places')
                 }
             },
             {
                 path: '/home',
                 element: <Home></Home>,
                 loader: ()=>{
-                    return fetch('https://hotels-data-server.vercel.app/hotels')
+                    return fetch('https://hotels-data-server.vercel.app/places')
                 }
             },
             {
@@ -52,7 +52,7 @@ export const router = createBrowserRouter([
                 loader: ()=>{
                     return fetch('https://hotels-data-server.vercel.app/hotels')
                 }
-            },
+            }
         ]
     },
     {

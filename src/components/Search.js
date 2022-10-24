@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Search = () => {
     return (
-        <div className="w-11/12 mx-auto flex justify-between mt-40">
+        <div className="w-11/12 mx-auto flex justify-between items-center h-screen ">
             <div className="text-center">
                 <h1 className="text-white text-4xl font-bold mt-20">What are you looking for?</h1>
                 <h1 className="text-white text-3xl font-bold mt-5">Best Rate | Best Service | Best Policy</h1>

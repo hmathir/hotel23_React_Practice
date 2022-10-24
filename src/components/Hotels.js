@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
-import background from '../assets/background.jpg';
 import { AuthContext } from "../context/UserContext";
 import SingleHotel from "./SingleHotel";
 import VerifyEmail from "./VerifyEmail";
@@ -10,7 +9,7 @@ const Hotels = () => {
     const { user } = useContext(AuthContext);
     return (
         <>
-        {user.emailVerified ? <div style={{ backgroundImage: `url(${background})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundBlendMode: "overlay", backgroundColor: 'rgba(0, 0, 0, 0.4)', backgroundAttachment: "fixed" }}>
+        {user.emailVerified ? <div>
                 <div className="flex w-11/12 mx-auto py-10 gap-6">
                     <div className="grid w-6/12 grid-cols-2 gap-4">
                         {
